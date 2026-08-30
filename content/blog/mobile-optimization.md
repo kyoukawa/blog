@@ -1,6 +1,6 @@
 ---
 title: "Mobile Optimization Notes"
-description: "Notes about improving the mobile experience of this blog."
+description: "Notes on making the blog more readable and comfortable on phones and tablets."
 date: 2026-08-29
 tags:
   - blog
@@ -11,7 +11,7 @@ draft: false
 
 # Mobile Optimization Notes
 
-A good blog should feel comfortable on both desktop and mobile screens.
+A good blog should feel comfortable on both desktop and mobile screens. Small-screen reading is not just a UI nicety; it shapes the whole reading experience.
 
 ## Key ideas
 
@@ -20,8 +20,12 @@ A good blog should feel comfortable on both desktop and mobile screens.
 3. Reduce heading size and spacing for readability.
 4. Increase list spacing and touch friendliness.
 
+## Why this matters
+
+People read on phones in shorter bursts and with more distraction. If layout and pacing are poor, even good writing becomes harder to keep.
+
 ## Practical takeaway
 
-Small-screen layout is not just a visual concern; it affects reading flow and perceived quality.
+The goal is not to squeeze everything into a tiny viewport. The goal is to preserve clarity, rhythm, and comfort.
 
-> The goal is not to squeeze everything into a tiny layout, but to preserve clarity and comfort.
+> A mobile-friendly layout should make reading easier, not just smaller.

@@ -1,6 +1,6 @@
 ---
 title: "Hello Quartz"
-description: "A starter note for this Quartz digital garden."
+description: "A simple introduction to setting up this Quartz-powered personal blog."
 date: 2026-08-29
 tags:
   - blog
@@ -11,20 +11,27 @@ draft: false
 
 # Hello Quartz
 
-This is the first blog post in the site.
+This is the first post in my Quartz-powered blog.
 
-## Why this exists
+## Why this project exists
 
-Quartz is a useful tool for building a personal digital garden, especially when you want to combine notes, writing, and publishing in one flow.
+A personal blog is more than a place to publish polished essays. It is also a system for capturing ideas, tracking learning, and turning notes into something useful over time.
 
-## Quick checklist
+Quartz gives me a clean way to keep everything in Markdown while still producing a readable, fast website.
 
-- Write notes in Markdown
-- Keep content in the `content` folder
-- Publish with a simple build step
+## What I like about this setup
+
+- Simple content authoring in Markdown
+- A lightweight publishing workflow
+- Easy local preview and version control
+- Good fit for a personal digital garden
+
+## Quick start
 
 ```bash
 npx quartz build --serve
 ```
 
-This post will act as a template for future entries.
+That is the basic loop: write, preview, refine, and publish.
+
+This post will act as a foundation for future entries and experiments.
