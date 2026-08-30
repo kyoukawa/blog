@@ -242,7 +242,7 @@ plugins:
       hideFolderPages: true
       linkToMore: false
     layout:
-      position: beforeBody
+      position: right
       priority: 20
   - source: "@quartz-community/spacer"
     enabled: true
