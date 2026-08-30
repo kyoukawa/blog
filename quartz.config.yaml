@@ -102,6 +102,14 @@ plugins:
     enabled: true
     options:
       renderEngine: katex
+      katexOptions:
+        trust: true
+        strict: false
+        macros:
+          "\\RR": "\\mathbb{R}"
+          "\\CC": "\\mathbb{C}"
+          "\\bra": '\\left\\langle #1\\right|'
+          "\\ket": '\\left| #1\\right\\rangle'
     order: 80
   - source: "@quartz-community/citations"
     enabled: false
@@ -171,7 +179,7 @@ plugins:
       position: right
       priority: 50
   - source: "@quartz-community/article-title"
-    enabled: false
+    enabled: true
     layout:
       position: beforeBody
       priority: 10
@@ -225,7 +233,17 @@ plugins:
       position: footer
       priority: 50
   - source: "@quartz-community/recent-notes"
-    enabled: false
+    enabled: true
+    options:
+      title: "Latest articles"
+      limit: 5
+      showTags: true
+      hideTagPages: true
+      hideFolderPages: true
+      linkToMore: false
+    layout:
+      position: beforeBody
+      priority: 20
   - source: "@quartz-community/spacer"
     enabled: true
     options: {}

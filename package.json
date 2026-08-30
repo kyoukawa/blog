@@ -20,6 +20,7 @@
     "build": "npx quartz build",
     "profile": "0x -D prof ./quartz/bootstrap-cli.mjs build --concurrency=1",
     "install-plugins": "npx tsx ./quartz/plugins/loader/install-plugins.ts",
+    "ensure-metadata": "node ./scripts/ensure-frontmatter.mjs",
     "prebuild": "npm run install-plugins"
   },
   "engines": {

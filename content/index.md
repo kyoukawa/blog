@@ -1,33 +1,37 @@
 ---
 title: "Home"
-description: "A personal blog and digital garden for notes, ideas, and experiments."
-date: 2026-08-29
+description: "A personal academic blog and digital garden focused on physics, mathematics, and technical notes."
+date: 2026-08-30
 draft: false
 tags:
   - home
   - blog
-  - digital-garden
+  - physics
 ---
 
 # Welcome
 
-This site is a quiet place for writing, reflection, and practical notes. It brings together personal observations, technical experiments, and the occasional record of what I am learning.
+This is a personal academic space dedicated to writing, research notes, and explorations in physics, optics, and mathematical foundations. Here I collect derivations, observations, and reflections on the principles that shape our understanding of nature.
 
-## Latest writing
+## Philosophy
 
-- [[blog/hello-quartz|Hello Quartz]]
-- [[blog/mobile-optimization|Mobile Optimization Notes]]
-- [[blog/week-notes|Weekly Notes]]
+The goal is to maintain clarity in exposition: complete derivations, rigorous definitions, and connections between concepts. Each article aims to be self-contained yet integrated into a broader web of understanding.
 
-## About this site
+## Content Areas
 
-The goal is simple: keep the writing clear, the structure lightweight, and the publishing flow easy to maintain. This is a digital garden in the broad sense — a place to collect ideas as they evolve.
+### Physics & Mathematical Foundations
 
-## Areas of focus
+- **Optics & Waves**: Birefringence, scattering, diffraction and interference phenomena
+- **Quantum Systems**: Zeeman effect, perturbation theory, selection rules
+- **Celestial Mechanics**: Orbital dynamics, tidal forces, precession effects
+- **Plasma & MHD**: Magnetohydrodynamics, Alfvén waves, plasma stability
+- **Statistical Physics**: Maxwell distributions, thermal equilibrium in fields
 
-- Product and engineering notes
-- Frontend and UX experimentation
-- Personal learning and reflection
-- Small technical explorations
+### Writing Principles
 
-> Consistency matters more than polish. This space is meant to grow steadily over time.
+- Equations are complete; derivations follow rigorously
+- Chinese exposition with English terminology
+- Cross-references to connect related topics
+- Updated as understanding evolves
+
+---
