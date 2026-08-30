@@ -228,6 +228,7 @@ plugins:
     enabled: true
     options:
       links:
+        "© 2026 Kyoukawa": https://kyoukawa.github.io/blog
         GitHub: https://github.com/kyoukawa/blog
     layout:
       position: footer

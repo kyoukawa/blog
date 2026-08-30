@@ -68,17 +68,18 @@ path[class~="typst-shape"] {
 }
 
 article {
-  > mjx-container.MathJax,
-  blockquote > div > mjx-container.MathJax {
+
+  >mjx-container.MathJax,
+  blockquote>div>mjx-container.MathJax {
     display: flex;
 
-    > svg {
+    >svg {
       margin-left: auto;
       margin-right: auto;
     }
   }
 
-  blockquote > div > mjx-container.MathJax > svg {
+  blockquote>div>mjx-container.MathJax>svg {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
@@ -132,7 +133,7 @@ a {
     height: 1ex;
     margin: 0 0.15em;
 
-    > path {
+    >path {
       fill: var(--dark);
     }
   }
@@ -185,7 +186,7 @@ a {
   }
 
   & article {
-    & > h1 {
+    &>h1 {
       font-size: 2rem;
     }
 
@@ -200,17 +201,17 @@ a {
       color: var(--gray);
     }
 
-    & li > * {
+    & li>* {
       margin-top: 0;
       margin-bottom: 0;
     }
 
-    p > strong {
+    p>strong {
       color: var(--dark);
     }
   }
 
-  & > #quartz-body {
+  &>#quartz-body {
     display: grid;
     grid-template-columns: #{map.get($desktopGrid, templateColumns)};
     grid-template-rows: #{map.get($desktopGrid, templateRows)};
@@ -279,6 +280,14 @@ a {
       grid-area: grid-sidebar-right;
       margin-right: 0;
       flex-direction: column;
+      align-self: start;
+
+      &>.toc {
+        position: sticky;
+        top: 5rem;
+        max-height: calc(100vh - 6rem);
+        overflow-y: auto;
+      }
 
       @media all and ($mobile) {
         margin-left: inherit;
@@ -294,12 +303,12 @@ a {
         flex-direction: row;
         padding: 0;
 
-        & > * {
+        &>* {
           flex: 1;
           max-height: 24rem;
         }
 
-        & > .toc {
+        &>.toc {
           display: none;
         }
       }
@@ -329,8 +338,9 @@ a {
     }
 
     @media all and ($mobile) {
-      & .sidebar.left > *,
-      & .sidebar.right > * {
+
+      & .sidebar.left>*,
+      & .sidebar.right>* {
         min-width: 0;
       }
 
@@ -339,18 +349,73 @@ a {
       }
 
       & .sidebar.right {
-        & > * {
+        &>* {
           flex: 1 1 calc(50% - 0.5rem);
         }
 
-        & > .toc {
+        &>.toc {
           display: none;
         }
       }
     }
 
-    & .center > article {
+    & .center>article {
       grid-area: grid-center;
+    }
+
+    & .recent-notes {
+      font-size: 0.85rem;
+
+      >h3 {
+        margin: 0.25rem 0 0.5rem 0;
+        font-size: 0.9rem;
+        line-height: 1.3;
+      }
+
+      >ul.recent-ul {
+        list-style: none;
+        margin: 0.5rem 0 0 0;
+        padding-left: 0;
+      }
+
+      >ul.recent-ul>li {
+        margin: 0.35rem 0;
+      }
+
+      .desc h3 {
+        margin: 0;
+        font-size: 0.82rem;
+        line-height: 1.45;
+      }
+
+      .meta {
+        margin: 0.15rem 0 0.25rem 0;
+        font-size: 0.7rem;
+        opacity: 0.72;
+      }
+
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.2rem;
+        list-style: none;
+        padding-left: 0;
+        margin: 0.2rem 0 0 0;
+      }
+
+      .tags>li {
+        display: inline-block;
+        margin: 0;
+      }
+
+      .tags>li>a {
+        display: inline-block;
+        font-size: 0.68rem;
+        line-height: 1.35;
+        padding: 0.1rem 0.38rem;
+        border-radius: 0.25rem;
+        white-space: nowrap;
+      }
     }
 
     & footer {
@@ -385,7 +450,7 @@ a {
 // ============================================================================
 
 // Full-width frame: no sidebars, center content spans full width
-.page[data-frame="full-width"] > #quartz-body {
+.page[data-frame="full-width"]>#quartz-body {
   grid-template-columns: auto;
   grid-template-rows: auto auto auto;
   grid-template-areas:
@@ -404,7 +469,7 @@ a {
 }
 
 // Minimal frame: no sidebars, no header/footer chrome, body content only + footer
-.page[data-frame="minimal"] > #quartz-body {
+.page[data-frame="minimal"]>#quartz-body {
   grid-template-columns: auto;
   grid-template-rows: auto auto;
   grid-template-areas:
@@ -469,8 +534,9 @@ blockquote {
 article,
 .center {
   @media all and ($mobile) {
-    > ul,
-    > ol {
+
+    >ul,
+    >ol {
       padding-left: 1.1rem;
       margin-top: 0.75rem;
       margin-bottom: 0.75rem;
@@ -494,7 +560,7 @@ thead {
   font-weight: revert;
   margin-bottom: 0;
 
-  article > & > a[role="anchor"] {
+  article>&>a[role="anchor"] {
     color: var(--dark);
     background-color: transparent;
   }
@@ -506,7 +572,7 @@ h3,
 h4,
 h5,
 h6 {
-  &[id] > a[href^="#"] {
+  &[id]>a[href^="#"] {
     margin: 0 0.5rem;
     opacity: 0;
     transition: opacity 0.2s ease;
@@ -515,11 +581,11 @@ h6 {
     user-select: none;
   }
 
-  &[id]:hover > a {
+  &[id]:hover>a {
     opacity: 1;
   }
 
-  &:not([id]) > a[role="anchor"] {
+  &:not([id])>a[role="anchor"] {
     display: none;
   }
 }
@@ -567,7 +633,7 @@ figure[data-rehype-pretty-code-figure] {
   line-height: 1.6rem;
   position: relative;
 
-  & > [data-rehype-pretty-code-title] {
+  &>[data-rehype-pretty-code-title] {
     font-family: var(--codeFont);
     font-size: 0.9rem;
     padding: 0.1rem 0.5rem;
@@ -578,7 +644,7 @@ figure[data-rehype-pretty-code-figure] {
     color: var(--darkgray);
   }
 
-  & > pre {
+  &>pre {
     padding: 0;
   }
 }
@@ -595,7 +661,7 @@ pre {
     border: none;
   }
 
-  & > code {
+  &>code {
     background: none;
     padding: 0;
     font-size: 0.85rem;
@@ -610,7 +676,7 @@ pre {
       border-radius: 5px;
     }
 
-    & > [data-line] {
+    &>[data-line] {
       padding: 0 0.25rem;
       box-sizing: border-box;
       border-left: 3px solid transparent;
@@ -631,11 +697,11 @@ pre {
       }
     }
 
-    &[data-line-numbers-max-digits="2"] > [data-line]::before {
+    &[data-line-numbers-max-digits="2"]>[data-line]::before {
       width: 2rem;
     }
 
-    &[data-line-numbers-max-digits="3"] > [data-line]::before {
+    &[data-line-numbers-max-digits="3"]>[data-line]::before {
       width: 3rem;
     }
   }
@@ -660,7 +726,7 @@ p {
 .table-container {
   overflow-x: auto;
 
-  & > table {
+  &>table {
     margin: 1rem;
     padding: 1.5rem;
     border-collapse: collapse;
@@ -670,7 +736,7 @@ p {
       min-width: 75px;
     }
 
-    & > * {
+    &>* {
       line-height: 2rem;
     }
   }
@@ -701,7 +767,7 @@ img {
   content-visibility: auto;
 }
 
-p > img + em {
+p>img+em {
   display: block;
   transform: translateY(-1rem);
 }
@@ -740,7 +806,7 @@ ol.overflow {
   content: "";
   clear: both;
 
-  & > li.overflow-end {
+  &>li.overflow-end {
     height: 0.5rem;
     margin: 0;
   }
