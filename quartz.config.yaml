@@ -81,6 +81,23 @@ plugins:
   - source: "@quartz-community/description"
     enabled: true
     order: 70
+  - source: "@quartz-community/note-properties"
+    enabled: true
+    options:
+      includeAll: false
+      includedProperties:
+        - description
+        - tags
+        - aliases
+      excludedProperties: []
+      hidePropertiesView: true
+      delimiters: ---
+      language: yaml
+    order: 5
+    layout:
+      position: beforeBody
+      priority: 15
+      display: all
   - source: "@quartz-community/latex"
     enabled: true
     options:

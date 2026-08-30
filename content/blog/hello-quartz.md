@@ -11,20 +11,20 @@ draft: false
 
 # Hello Quartz
 
-This is the first post in my Quartz-powered blog.
+This is the first post in my Quartz-powered blog, and it serves as a simple foundation for future writing.
 
 ## Why this project exists
 
 A personal blog is more than a place to publish polished essays. It is also a system for capturing ideas, tracking learning, and turning notes into something useful over time.
 
-Quartz gives me a clean way to keep everything in Markdown while still producing a readable, fast website.
+Quartz provides a clean workflow: write in Markdown, keep the structure simple, and publish a fast, readable website without unnecessary complexity.
 
-## What I like about this setup
+## What I value in this setup
 
 - Simple content authoring in Markdown
 - A lightweight publishing workflow
 - Easy local preview and version control
-- Good fit for a personal digital garden
+- A strong fit for a personal digital garden
 
 ## Quick start
 
@@ -34,4 +34,4 @@ npx quartz build --serve
 
 That is the basic loop: write, preview, refine, and publish.
 
-This post will act as a foundation for future entries and experiments.
+This post marks the beginning of a small but durable archive of notes, experiments, and updates.

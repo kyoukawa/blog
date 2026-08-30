@@ -11,9 +11,9 @@ tags:
 
 # Welcome
 
-This is my personal blog and digital garden — a place to collect notes, write reflections, and publish small experiments.
+This site is a quiet place for writing, reflection, and practical notes. It brings together personal observations, technical experiments, and the occasional record of what I am learning.
 
-## Latest posts
+## Latest writing
 
 - [[blog/hello-quartz|Hello Quartz]]
 - [[blog/mobile-optimization|Mobile Optimization Notes]]
@@ -21,13 +21,13 @@ This is my personal blog and digital garden — a place to collect notes, write 
 
 ## About this site
 
-This space is meant to be lightweight, readable, and easy to maintain. I use it to capture ideas, document progress, and share useful notes with minimal friction.
+The goal is simple: keep the writing clear, the structure lightweight, and the publishing flow easy to maintain. This is a digital garden in the broad sense — a place to collect ideas as they evolve.
 
-## What I write about
+## Areas of focus
 
 - Product and engineering notes
-- Frontend and UX experiments
+- Frontend and UX experimentation
 - Personal learning and reflection
 - Small technical explorations
 
-> The goal is simple: keep writing consistently, and let the site grow naturally over time.
+> Consistency matters more than polish. This space is meant to grow steadily over time.

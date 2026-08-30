@@ -13,18 +13,18 @@ draft: false
 
 ## This week
 
-- Finished the initial blog setup
-- Improved the mobile layout and overall readability
+- Finalized the initial blog structure
+- Improved the mobile reading experience and layout clarity
 - Prepared the site for GitHub Pages deployment
 
 ## Highlights
 
-The project has moved from a bare skeleton into a workable personal publishing foundation. The structure is simple, the writing flow is lightweight, and the site is now ready for real content updates.
+The project has evolved from a bare starting point into a workable personal publishing foundation. The structure is simple, the writing flow is lightweight, and the site is now ready for actual content work.
 
 ## Next steps
 
 - Publish more notes and articles
-- Refine the homepage and navigation
+- refine the homepage and navigation
 - Keep the site easy to maintain and pleasant to read
 
 ## Closing thought

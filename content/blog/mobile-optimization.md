@@ -11,7 +11,7 @@ draft: false
 
 # Mobile Optimization Notes
 
-A good blog should feel comfortable on both desktop and mobile screens. Small-screen reading is not just a UI nicety; it shapes the whole reading experience.
+A good blog should feel comfortable on both desktop and mobile screens. Small-screen reading is not just a UI nicety; it shapes the entire reading experience.
 
 ## Key ideas
 
@@ -22,10 +22,10 @@ A good blog should feel comfortable on both desktop and mobile screens. Small-sc
 
 ## Why this matters
 
-People read on phones in shorter bursts and with more distraction. If layout and pacing are poor, even good writing becomes harder to keep.
+People read on phones in shorter bursts and with more distraction. If layout and pacing are poor, even strong writing becomes harder to stay with.
 
 ## Practical takeaway
 
 The goal is not to squeeze everything into a tiny viewport. The goal is to preserve clarity, rhythm, and comfort.
 
-> A mobile-friendly layout should make reading easier, not just smaller.
+> A mobile-friendly layout should make reading easier, not merely smaller.
